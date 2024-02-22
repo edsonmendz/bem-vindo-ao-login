@@ -35,32 +35,43 @@ function App2() {
       ) : (
         <form className='formulario' onSubmit={handleLogin}>
 
-            <img src='../public/imagens/Elipse 22.png'></img>
+            <img className='pol1' src='./imagens/Ellipse 22.png'></img>
+
+            <img className='pol2' src='./imagens/Polygon 2.png'></img>
+
+            <img className='pol3' src='./imagens/Polygon 3.png'></img>
             
             <div className='capsula'>            
                 <h2>Bem Vindo ao <span className='azul'>Login</span></h2>
-                <br></br>
+                <br></br><br></br>
 
                 <p className='cinza'>Preencha os dados do login para acessar</p> 
+                <br></br>
 
-                <div className='esquerda'>
-                <label>Usuário</label>
+                <div className='id'>
+                <label><b>Usuário</b></label>
                 <br></br>
-                <input
-                type="text"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                />
+                <div className='inserir'>
+                  <input
+                  type="text"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  />
+                  <img className='usuario' src='./imagens/usuario.png'></img>
+                </div>                
                 <br></br>
-                <label>Senha</label>
+                <label><b>Senha</b></label>
                 <br></br>
-                <input
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                    />
+                  <div className='inserir'>
+                    <input
+                    type="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                        />
+                    <img className='' src='./imagens/esconder.png'></img>
+                  </div>                
                 </div>
-                <button type="submit">Entrar</button>
+                <button type="submit">ENTRAR</button>
                 {error && <p style={{ color: 'red' }}>{error}</p>} 
             </div>
             <div className='facalogin'>
