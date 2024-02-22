@@ -54,6 +54,7 @@ function App2() {
                 <div className='inserir'>
                   <input
                   type="text"
+                  placeholder='jhonasrodrigues'
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                   />
@@ -65,6 +66,7 @@ function App2() {
                   <div className='inserir'>
                     <input
                     type="password"
+                    placeholder='senhadeacesso'
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                         />
@@ -77,6 +79,9 @@ function App2() {
             <div className='facalogin'>
                 <h4>Faça login em nossa</h4>
                 <h3>Plataforma</h3>
+            </div>
+            <div className='footer'>
+              <br></br>
             </div>
         </form>
       )}
